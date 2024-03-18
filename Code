@@ -1,0 +1,18 @@
+def main():
+    # Get inputs from the user
+    shirt_price = float(input("Enter the price of the shirt: "))
+    quantity = int(input("Enter the quantity: "))
+    amount_tendered = float(input("Enter the amount tendered by the customer: "))
+
+    # Calculate total order
+    total_order = shirt_price * quantity
+
+    # Calculate change
+    change = amount_tendered - total_order
+
+    # Output the result
+    print(f"Total order: ${total_order}")
+    print(f"Change: ${change}" if change >= 0 else "Insufficient amount tendered.")
+
+if __name__ == "__main__":
+    main()
